@@ -1,0 +1,75 @@
+:root {
+    /* <---> Font <---> */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* <---> Colors <---> */
+
+    /* --- Monochrome --- */
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+
+    /* --- Dark --- */
+
+    /* Black */
+    --dark-black-1: rgb(5, 5, 5);
+    --dark-black-2: rgb(10, 10, 10);
+
+    /* Gray */
+    --dark-gray-1: rgb(20, 20, 20);
+    --dark-gray-2: rgb(40, 40, 40);
+    --dark-gray-3: rgb(60, 60, 60);
+
+    /* --- Light --- */
+
+    /* Gray */
+    --light-gray-1: rgb(80, 80, 80);
+    --light-gray-2: rgb(100, 100, 100);
+    --light-gray-3: rgb(120, 120, 120);
+    --light-gray-4: rgb(140, 140, 140);
+    --light-gray-5: rgb(160, 160, 160);
+    --light-gray-6: rgb(180, 180, 180);
+
+    /* White */
+    --light-white-1: rgb(200, 200, 200);
+    --light-white-2: rgb(220, 220, 220);
+    --light-white-3: rgb(240, 240, 240);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*[color-theme="dark"] {
+    --bg-color-light-1: var(--light-gray-4);
+    --bg-color-light-2: var(--light-gray-3);
+    --bg-color-light-3: var(--light-gray-2);
+
+    --bg-color-dark-1: var(--light-gray-1);
+    --bg-color-dark-2: var(--dark-gray-3);
+    --bg-color-dark-3: var(--dark-gray-2);
+
+    --txt-color-light-1: var(--light-white-2);
+    --txt-color-light-2: var(--light-white-1);
+    --txt-color-light-3: var(--light-gray-6);
+
+    background-color: var(--dark-gray-3);
+    color: var(--light-white-2);
+}
+
+*[color-theme="light"] {
+    --bg-color-light-1: var(--light-gray-4);
+    --bg-color-light-2: var(--light-gray-5);
+    --bg-color-light-3: var(--light-gray-6);
+
+    --bg-color-dark-1: var(--light-white-3);
+    --bg-color-dark-2: var(--light-white-2);
+    --bg-color-dark-3: var(--light-white-1);
+
+    --txt-color-light-1: var(--light-gray-2);
+    --txt-color-light-2: var(--light-gray-1);
+    --txt-color-light-3: var(--dark-gray-3);
+
+    background-color: var(--light-withe-2);
+    color: var(--dark-black-2);
+}
