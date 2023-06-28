@@ -3,7 +3,7 @@
 /* Objects */
 
 nav {
-    background-color: var(--bg-color-dark-3);
+    background-color: var(--bg-color-2);
 
     min-height: 30px;
 
@@ -14,12 +14,14 @@ nav {
 }
 
 a {
-    color: var(--txt-color-light-1);
+    color: var(--txt-color-3);
+    transition: var(--transition-very-short-ms) color;
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--txt-color-light-2);
+    color: var(--txt-color-1);
+    transition: var(--transition-very-short-ms) color;
     text-decoration: underline;
 }
 
@@ -35,11 +37,6 @@ img {
 
 .navitem {
     margin: 4.5px;
-}
-
-.disabled {
-    opacity: 0.7;
-    pointer-events: none;
 }
 
 /* ------> STYLING IN CLASSES <------ */
@@ -470,10 +467,87 @@ img {
     font-size: 1.8em;
 }
 
+.text-size-6 {
+    font-size: 2em;
+}
+
+.text-size-7 {
+    font-size: 2.2em;
+}
+
+.text-size-8 {
+    font-size: 2.4em;
+}
+
+.text-size-9 {
+    font-size: 2.6em;
+}
+
+.text-size-10 {
+    font-size: 2.8em;
+}
+
+.text-size-11 {
+    font-size: 3em;
+}
+
+.text-size-12 {
+    font-size: 3.2em;
+}
+
+.text-size-13 {
+    font-size: 3.4em;
+}
+
+.text-size-14 {
+    font-size: 3.6em;
+}
+
+.text-size-15 {
+    font-size: 3.8em;
+}
+
 /* Text decorations */
 
 .text-dec-none {
     text-decoration: none;
+}
+
+/* Text gradient */
+
+.text-multicolor {
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text-multicolor-anim {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite alternate;
+}
+
+.text-multicolor-rb {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(-45deg,violet,indigo,rgb(0, 182, 243),rgb(0, 206, 0),yellow,orange,red);
+}
+
+.text-multicolor-rb-anim {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite alternate;
+    background-image: linear-gradient(-45deg,violet,indigo,rgb(0, 182, 243),rgb(0, 206, 0),yellow,orange,red);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
 }
 
 /* Text pos */
@@ -752,4 +826,17 @@ img {
 
 .disabled-select {
     user-select: none;
+}
+
+/* Appearance */
+
+.active {
+    opacity: 1;
+    pointer-events: none;
+    text-decoration: underline;
+}
+
+.disabled {
+    opacity: 0.7;
+    pointer-events: none;
 }

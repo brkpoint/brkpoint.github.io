@@ -2,37 +2,129 @@
     /* <---> Font <---> */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+    /* <---> Other <---> */
+    --transition-very-short-ms: 110ms;
+    --transition-short-ms: 220ms;
+    --transition-long-ms: 440ms;
+    --transition-very-long-ms: 660ms;
+
     /* <---> Colors <---> */
 
+    /* Brown */
+    --brown-dark-4:   rgb(17, 10, 6);
+    --brown-dark-3:   rgb(25, 15, 9);
+    --brown-dark-2:   rgb(33, 20, 12);
+    --brown-dark-1:   rgb(42, 26, 15);
+    --brown:          rgb(50, 31, 18);
+    --brown-light-1:  rgb(58, 36, 21);
+    --brown-light-2:  rgb(66, 41, 24);
+    --brown-light-3:  rgb(75, 46, 27);
+    --brown-light-4:  rgb(83, 51, 30);
+
+    /* Purple */
+    --purple-dark-4:  rgb(40, 0, 50);
+    --purple-dark-3:  rgb(60, 0, 70);
+    --purple-dark-2:  rgb(80, 0, 90);
+    --purple-dark-1:  rgb(80, 0, 110);
+    --purple:         rgb(80, 0, 130);
+    --purple-light-1: rgb(80, 0, 150);
+    --purple-light-2: rgb(80, 0, 170);
+    --purple-light-3: rgb(80, 0, 190);
+    --purple-light-4: rgb(80, 0, 210);
+
+    /* Pink */
+    --pink-dark-4:    rgb(90, 0, 60);
+    --pink-dark-3:    rgb(100, 0, 70);
+    --pink-dark-2:    rgb(110, 0, 80);
+    --pink-dark-1:    rgb(120, 0, 90);
+    --pink:           rgb(130, 0, 100);
+    --pink-light-1:   rgb(140, 0, 110);
+    --pink-light-2:   rgb(150, 0, 120);
+    --pink-light-3:   rgb(160, 0, 130);
+    --pink-light-4:   rgb(170, 0, 140);
+
+    /* Blue */
+    --blue-dark-4:    rgb(0, 40, 90);
+    --blue-dark-3:    rgb(0, 50, 100);
+    --blue-dark-2:    rgb(0, 60, 110);
+    --blue-dark-1:    rgb(0, 80, 120);
+    --blue:           rgb(0, 90, 130);
+    --blue-light-1:   rgb(0, 100, 140);
+    --blue-light-2:   rgb(0, 110, 150);
+    --blue-light-3:   rgb(0, 120, 160);
+    --blue-light-4:   rgb(0, 130, 170);
+
+    /* Green */
+    --green-dark-4:   rgb(10, 70, 0);
+    --green-dark-3:   rgb(20, 80, 0);
+    --green-dark-2:   rgb(30, 90, 0);
+    --green-dark-1:   rgb(40, 100, 0);
+    --green:          rgb(50, 110, 0);
+    --green-light-1:  rgb(60, 120, 0);
+    --green-light-2:  rgb(70, 130, 0);
+    --green-light-3:  rgb(80, 140, 0);
+    --green-light-4:  rgb(90, 150, 0);
+
+    /* Yellow */
+    --yellow-dark-4:  rgb(150, 140, 0);
+    --yellow-dark-3:  rgb(160, 150, 0);
+    --yellow-dark-2:  rgb(170, 160, 0);
+    --yellow-dark-1:  rgb(180, 170, 0);
+    --yellow:         rgb(190, 180, 0);
+    --yellow-light-1: rgb(200, 190, 0);
+    --yellow-light-2: rgb(210, 200, 0);
+    --yellow-light-3: rgb(220, 210, 0);
+    --yellow-light-4: rgb(230, 220, 0);
+
+    /* Orange */
+    --orange-dark-4:  rgb(160, 90, 0);
+    --orange-dark-3:  rgb(170, 100, 0);
+    --orange-dark-2:  rgb(180, 110, 0);
+    --orange-dark-1:  rgb(190, 120, 0);
+    --orange:         rgb(200, 130, 0);
+    --orange-light-1: rgb(210, 140, 0);
+    --orange-light-2: rgb(220, 150, 0);
+    --orange-light-3: rgb(230, 160, 0);
+    --orange-light-4: rgb(240, 170, 0);
+
+    /* Red */
+    --red-dark-4:     rgb(90, 20, 20);
+    --red-dark-3:     rgb(100, 20, 20);
+    --red-dark-2:     rgb(110, 20, 20);
+    --red-dark-1:     rgb(120, 20, 20);
+    --red:            rgb(130, 20, 20);
+    --red-light-1:    rgb(140, 20, 20);
+    --red-light-2:    rgb(150, 20, 20);
+    --red-light-3:    rgb(160, 20, 20);
+    --red-light-4:    rgb(170, 20, 20);
+
     /* --- Monochrome --- */
-    --black: rgb(0, 0, 0);
-    --white: rgb(255, 255, 255);
-
-    /* --- Dark --- */
-
-    /* Black */
-    --dark-black-1: rgb(5, 5, 5);
-    --dark-black-2: rgb(10, 10, 10);
-
-    /* Gray */
-    --dark-gray-1: rgb(20, 20, 20);
-    --dark-gray-2: rgb(40, 40, 40);
-    --dark-gray-3: rgb(60, 60, 60);
-
-    /* --- Light --- */
-
-    /* Gray */
-    --light-gray-1: rgb(80, 80, 80);
-    --light-gray-2: rgb(100, 100, 100);
-    --light-gray-3: rgb(120, 120, 120);
-    --light-gray-4: rgb(140, 140, 140);
-    --light-gray-5: rgb(160, 160, 160);
-    --light-gray-6: rgb(180, 180, 180);
-
-    /* White */
-    --light-white-1: rgb(200, 200, 200);
-    --light-white-2: rgb(220, 220, 220);
-    --light-white-3: rgb(240, 240, 240);
+    --black:   rgb(0, 0, 0);
+    --black-1: rgb(10, 10, 10);
+    --black-2: rgb(20, 20, 20);
+    --black-3: rgb(30, 30, 30);
+    --black-4: rgb(40, 40, 40);
+    --black-5: rgb(50, 50, 50);
+    --gray-13: rgb(60, 60, 60);
+    --gray-12: rgb(70, 70, 70);
+    --gray-11: rgb(80, 80, 80);
+    --gray-10: rgb(90, 90, 90);
+    --gray-9:  rgb(100, 100, 100);
+    --gray-8:  rgb(110, 110, 110);
+    --gray-7:  rgb(120, 120, 120);
+    --gray-6:  rgb(130, 130, 130);
+    --gray-5:  rgb(140, 140, 140);
+    --gray-4:  rgb(150, 150, 150);
+    --gray-3:  rgb(160, 160, 160);
+    --gray-2:  rgb(170, 170, 170);
+    --gray-1:  rgb(185, 185, 185);
+    --gray:    rgb(195, 195, 195);
+    --white-5: rgb(205, 205, 205);
+    --white-4: rgb(215, 215, 215);
+    --white-3: rgb(225, 225, 225);
+    --white-2: rgb(235, 235, 235);
+    --white-1: rgb(245, 245, 245);
+    --white:   rgb(255, 255, 255);
 }
 
 * {
@@ -41,35 +133,27 @@
 }
 
 *[color-theme="dark"] {
-    --bg-color-light-1: var(--light-gray-4);
-    --bg-color-light-2: var(--light-gray-3);
-    --bg-color-light-3: var(--light-gray-2);
+    --bg-color-1: var(--black-2);
+    --bg-color-2: var(--black-3);
+    --bg-color-3: var(--black-4);
 
-    --bg-color-dark-1: var(--light-gray-1);
-    --bg-color-dark-2: var(--dark-gray-3);
-    --bg-color-dark-3: var(--dark-gray-2);
+    --txt-color-1: var(--white);
+    --txt-color-2: var(--white-1);
+    --txt-color-3: var(--white--2);
 
-    --txt-color-light-1: var(--light-white-2);
-    --txt-color-light-2: var(--light-white-1);
-    --txt-color-light-3: var(--light-gray-6);
-
-    background-color: var(--dark-gray-3);
-    color: var(--light-white-2);
+    background-color: var(--black-4);
+    color: var(--white-2);
 }
 
 *[color-theme="light"] {
-    --bg-color-light-1: var(--light-gray-4);
-    --bg-color-light-2: var(--light-gray-5);
-    --bg-color-light-3: var(--light-gray-6);
+    --bg-color-1: var(--white);
+    --bg-color-2: var(--white-1);
+    --bg-color-3: var(--white-2);
 
-    --bg-color-dark-1: var(--light-white-3);
-    --bg-color-dark-2: var(--light-white-2);
-    --bg-color-dark-3: var(--light-white-1);
+    --txt-color-1: var(--black);
+    --txt-color-2: var(--black-1);
+    --txt-color-3: var(--black-2);
 
-    --txt-color-light-1: var(--light-gray-2);
-    --txt-color-light-2: var(--light-gray-1);
-    --txt-color-light-3: var(--dark-gray-3);
-
-    background-color: var(--light-withe-2);
-    color: var(--dark-black-2);
+    background-color: var(--white-2);
+    color: var(--black-4);
 }
