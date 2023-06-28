@@ -37,6 +37,11 @@ img {
     margin: 4.5px;
 }
 
+.disabled {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
 /* ------> STYLING IN CLASSES <------ */
 
 /* Block */
@@ -741,4 +746,10 @@ img {
 
 .height-100px {
     height: 100px;
+}
+
+/* User input */
+
+.disabled-select {
+    user-select: none;
 }
