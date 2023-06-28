@@ -244,11 +244,11 @@ img {
 }
 
 .border-1 {
-    border: 1px solid var(--gray-6);
+    border: 2px solid var(--gray-6);
 }
 
 .border-2 {
-    border: 1px solid var(--gray-6);
+    border: 3px solid var(--gray-6);
 }
 
 /* Borders Rounded */
