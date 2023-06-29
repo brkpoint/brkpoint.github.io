@@ -2,6 +2,6 @@
 Website for my projects
 
 ## In there will be:
-- Links to include css files
-- Code editor
-- [Web stylizer](https://github.com/ShibabOfficial/CSS-Web-Stylizer)
+- My projects
+- Docs
+- Links for css and js files
