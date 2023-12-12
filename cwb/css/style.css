@@ -2299,12 +2299,82 @@ button:hover {
 
 .profile-picture-small {
     width: 25px;
+    height: 25px;
 }
 
 .profile-picture-medium {
     width: 50px;
+    height: 50px;
 }
 
 .profile-picture-large {
     width: 100px;
+    height: 100px;
+}
+
+/* Loading Bars */
+
+.loading-bar {
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    
+    pointer-events: none;
+}
+
+.loading-bar .bar-top {
+    padding: 0;
+    margin: 3px;
+
+    height: 5px;
+
+    content: " ";
+}
+
+.loading-bar .bar-top.gradient-blue {
+    padding: 0;
+    margin: 3px;
+
+    border-radius: 5px;
+
+    height: 7px;
+
+    content: " ";
+
+    background-image: var(--background-loading-bar-light-blue-1);
+    background-size: 200% auto;
+    background-position: 0 100%;
+
+    animation: loading-bar-gradient-anim 2s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.loading-bar.hidden .bar-top {
+    animation: loading-bar-hide-top var(--transition-long-ms);
+    animation-fill-mode: forwards;
+}
+
+@keyframes loading-bar-gradient-anim { 
+    0%   { background-position: 0 0; }
+    100% { background-position: -200% 0; }
+}
+
+@keyframes loading-bar-hide-top {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(1.5px); }
+    100% { transform: translateY(-20px); }
+}
+
+@keyframes loading-bar-hide-bottom { 
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-1.5px); }
+    100% { transform: translateY(20px); }
 }

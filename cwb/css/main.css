@@ -139,13 +139,17 @@
 
     /* --- Linear gradients --- */
 
-    /* Light orange to light pink */
-    --background-light-orange-light-pink-1: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-    --background-light-orange-light-pink-2: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    /* Sun sets styles */
+    --background-sunset-1: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    --background-sunset-2: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    --background-sunset-3: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
 
     /* Light green to light blue */
     --background-light-green-light-blue-1: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     --background-light-green-light-blue-2: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
+    /* Light green to light pink */
+    --background-light-green-light-pink-1: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
 
     /* Dark purple to light blue */
     --background-dark-purple-light-blue-1: linear-gradient(to top, #30cfd0 0%, #330867 100%);
@@ -158,6 +162,17 @@
 
     /* Light purple to light pink */
     --background-light-purple-light-pink-1: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+
+    /* Dark blue to light blue */
+    --background-dark-blue-light-blue-1: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+
+    /* --- Loading bar styles --- */
+
+    /* Light Blue */
+    --background-loading-bar-light-blue-1: linear-gradient(to right, #4facfe 0%, #00f2fe 50%, #4facfe 100%);
+
+    /* Orange */
+    --background-loading-bar-orange-1: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
 * {

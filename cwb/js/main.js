@@ -2,7 +2,7 @@ const languages = [
     {
         name: "c++",
         highlights: [
-
+            { word: "", color: [] }
         ],
     }
 ];
