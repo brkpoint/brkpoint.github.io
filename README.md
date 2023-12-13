@@ -1,7 +1,6 @@
-# ShibabOfficial.github.io
-Website for my projects
+# 🌐 shibabOfficial.github.io
+Website for my projects!
 
-## In there will be:
-- My projects
-- Docs
-- Links for css and js files
+## 📕 In there will be:
+- 📟 My projects
+- 📃 Docs for the 'css-web-stylizer'
