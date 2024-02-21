@@ -1,6 +1,4 @@
 # 🌐 shibabOfficial.github.io
-Website for my projects!
-
-## 📕 In there will be:
-- 📟 My projects
-- 📃 Docs for the 'css-web-stylizer'
+My own website that contains my projects
+# ❔ What it was made in?
+[![made](https://skillicons.dev/icons?i=react)]()
