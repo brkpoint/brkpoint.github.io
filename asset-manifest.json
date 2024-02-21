@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e58e4e40.css",
-    "main.js": "/static/js/main.583041d7.js",
-    "static/js/787.7cf6c855.chunk.js": "/static/js/787.7cf6c855.chunk.js",
+    "main.css": "/static/css/main.a4ebe9ac.css",
+    "main.js": "/static/js/main.309553b3.js",
+    "static/media/TT Octosquares Trial Bold.ttf": "/static/media/TT Octosquares Trial Bold.6e49118b1017a63d3db6.ttf",
+    "static/media/dark-mode.svg": "/static/media/dark-mode.c3741be474410a685b4e.svg",
+    "static/media/light-mode.svg": "/static/media/light-mode.9cfa25a7e3ec539cfdda.svg",
     "index.html": "/index.html",
-    "main.e58e4e40.css.map": "/static/css/main.e58e4e40.css.map",
-    "main.583041d7.js.map": "/static/js/main.583041d7.js.map",
-    "787.7cf6c855.chunk.js.map": "/static/js/787.7cf6c855.chunk.js.map"
+    "main.a4ebe9ac.css.map": "/static/css/main.a4ebe9ac.css.map",
+    "main.309553b3.js.map": "/static/js/main.309553b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.e58e4e40.css",
-    "static/js/main.583041d7.js"
+    "static/css/main.a4ebe9ac.css",
+    "static/js/main.309553b3.js"
   ]
 }

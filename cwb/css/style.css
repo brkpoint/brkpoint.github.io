@@ -1443,6 +1443,46 @@ button:hover {
     max-width: 200px;
 }
 
+.max-width-205px {
+    max-width: 205px;
+}
+
+.max-width-210px {
+    max-width: 210px;
+}
+
+.max-width-215px {
+    max-width: 215px;
+}
+
+.max-width-220px {
+    max-width: 220px;
+}
+
+.max-width-225px {
+    max-width: 225px;
+}
+
+.max-width-230px {
+    max-width: 230px;
+}
+
+.max-width-235px {
+    max-width: 235px;
+}
+
+.max-width-240px {
+    max-width: 240px;
+}
+
+.max-width-245px {
+    max-width: 245px;
+}
+
+.max-width-250px {
+    max-width: 250px;
+}
+
 .max-width-5p {
     max-width: 5%;
 }
@@ -1935,6 +1975,46 @@ button:hover {
     max-height: 200px;
 }
 
+.max-height-205px {
+    max-height: 205px;
+}
+
+.max-height-210px {
+    max-height: 210px;
+}
+
+.max-height-215px {
+    max-height: 215px;
+}
+
+.max-height-220px {
+    max-height: 220px;
+}
+
+.max-height-225px {
+    max-height: 225px;
+}
+
+.max-height-230px {
+    max-height: 230px;
+}
+
+.max-height-235px {
+    max-height: 235px;
+}
+
+.max-height-240px {
+    max-height: 240px;
+}
+
+.max-height-245px {
+    max-height: 245px;
+}
+
+.max-height-250px {
+    max-height: 250px;
+}
+
 .max-height-5p {
     max-height: 5%;
 }
@@ -2260,7 +2340,7 @@ button:hover {
 /* Links */
 
 .link {
-    color: var(--txt-color-3);
+    color: var(--txt-color-4);
     transition: var(--transition-very-short-ms) color;
     text-decoration: none;
 }
@@ -2297,14 +2377,28 @@ button:hover {
 
 /* Images */
 
+.picture-w-o-small {
+    width: 25px;
+}
+
 .profile-picture-small {
     width: 25px;
     height: 25px;
 }
 
+.profile-picture-small-medium {
+    width: 45px;
+    height: 45px;
+}
+
 .profile-picture-medium {
     width: 50px;
     height: 50px;
+}
+
+.profile-picture-medium-large {
+    width: 70px;
+    height: 70px;
 }
 
 .profile-picture-large {

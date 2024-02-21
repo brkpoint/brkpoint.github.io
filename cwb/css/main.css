@@ -202,6 +202,7 @@ html, body {
     --txt-color-1: var(--white);
     --txt-color-2: var(--white-1);
     --txt-color-3: var(--white-2);
+    --txt-color-4: var(--white-5);
 
     background-color: var(--black-4);
     color: var(--white-2);
@@ -215,6 +216,7 @@ html, body {
     --txt-color-1: var(--black);
     --txt-color-2: var(--black-1);
     --txt-color-3: var(--black-2);
+    --txt-color-4: var(--black-5);
 
     background-color: var(--white-2);
     color: var(--black-4);
