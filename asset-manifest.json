@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.a4ebe9ac.css",
-    "main.js": "/static/js/main.d721dbba.js",
+    "main.js": "/static/js/main.60d3b75d.js",
     "static/media/TT Octosquares Trial Bold.ttf": "/static/media/TT Octosquares Trial Bold.6e49118b1017a63d3db6.ttf",
     "static/media/dark-mode.svg": "/static/media/dark-mode.c3741be474410a685b4e.svg",
     "static/media/light-mode.svg": "/static/media/light-mode.9cfa25a7e3ec539cfdda.svg",
     "index.html": "/index.html",
     "main.a4ebe9ac.css.map": "/static/css/main.a4ebe9ac.css.map",
-    "main.d721dbba.js.map": "/static/js/main.d721dbba.js.map"
+    "main.60d3b75d.js.map": "/static/js/main.60d3b75d.js.map"
   },
   "entrypoints": [
     "static/css/main.a4ebe9ac.css",
-    "static/js/main.d721dbba.js"
+    "static/js/main.60d3b75d.js"
   ]
 }
