@@ -13,6 +13,11 @@ nav {
     align-items: center;
 }
 
+#side-nav {
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
 a {
     color: var(--txt-color-3);
     transition: var(--transition-very-short-ms) color;
@@ -58,7 +63,7 @@ code .code {
     margin: 0;
     padding: 5px;
 
-    width: 100%;
+    max-width: 100%;
 
     display: flex;
 
@@ -93,6 +98,32 @@ button:hover {
 
     background-color: var(--bg-color-2);
     color: var(--txt-color-1);
+
+    cursor: pointer;
+}
+
+button:has(img) {
+    background-color: transparent;
+    border: none;
+    
+    filter: brightness(70%);
+
+    margin: 4px;
+    padding: 2px;
+
+    transition: var(--transition-short-ms);
+
+    width: 90px;
+    height: 40px;
+
+    font-size: 0.8em;
+}
+
+button:has(img):hover {
+    background-color: transparent;
+    border: none;
+
+    filter: brightness(100%);
 
     cursor: pointer;
 }
@@ -2481,4 +2512,32 @@ button:hover {
     0% { transform: translateY(0); }
     25% { transform: translateY(-1.5px); }
     100% { transform: translateY(20px); }
+}
+
+@media only screen and (min-width: 850px) {
+    .screen-size-normal {
+        display: auto;
+    }
+
+    .screen-size-small {
+        display: none;
+    }
+
+    #side-nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 849px) {
+    .screen-size-normal {
+        display: none;
+    }
+
+    .screen-size-small {
+        display: auto;
+    }
+
+    #side-nav {
+        display: auto;
+    }
 }
