@@ -7,7 +7,9 @@ export const metadata = {
   title: "Aleksander",
   description: "Welcome to my page!!",
   creator: "Aleksander",
-  og: [{ image: "https://avatars.githubusercontent.com/u/88441414" }]
+  openGraph: {
+    image: "https://avatars.githubusercontent.com/u/88441414?s=48&v=4"
+  },
 };
 
 export default function RootLayout({ children }) {
