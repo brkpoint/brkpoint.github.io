@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
       <head>
-        <link rel="icon" href="https://avatars.githubusercontent.com/u/88441414" sizes="any"/>
+        <link rel="icon" className="rounded" href="https://avatars.githubusercontent.com/u/88441414" sizes="any"/>
       </head>
       <body className={`${inter.className} flex flex-col font-mono h-full`}>
         {children}
