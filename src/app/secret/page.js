@@ -4,14 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import useSticky from "@/modules/Sticky";
-import { metadata } from "../layout";
-
-export async function generateMetadata({ params: { lng }}) {
-    metadata.title = "Secret page...";
-    metadata.description = "How did you find this ???";
-
-    return metadata;
-}
 
 export default function Home() {
     const { sticky, stickyRef } = useSticky();
