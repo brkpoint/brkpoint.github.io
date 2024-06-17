@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
 
 import useSticky from "@/modules/Sticky";
 
