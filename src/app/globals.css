@@ -16,10 +16,6 @@
   }
 }
 
-html {
-  overflow-y: overlay;
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-end-rgb));
@@ -39,7 +35,7 @@ body {
   backdrop-filter: blur(3px);
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 8px;
 }
 
@@ -56,4 +52,4 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   border: 1px solid rgb(169, 169, 178);
-}
+} */
