@@ -3,9 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import SimpleBar from 'simplebar-react';
-import 'simplebar-react/dist/simplebar.min.css';
-
 import useSticky from "@/modules/Sticky";
 
 export default function Home() {
@@ -51,16 +48,14 @@ export default function Home() {
                 </div>
             </nav>
 
-            <SimpleBar>
-                <main className="m-4 flex min-h-screen flex-col items-center">
-                    <h1 className="text-4xl">
-                        Wait... It will be later
-                    </h1>
-                    <div className="w-full p-2">
+            <main className="m-4 flex min-h-screen flex-col items-center">
+                <h1 className="text-4xl">
+                    Wait... It will be later
+                </h1>
+                <div className="w-full p-2">
 
-                    </div>
-                </main>
-            </SimpleBar>
+                </div>
+            </main>
         </>
     );
 }

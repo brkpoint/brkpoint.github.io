@@ -34,3 +34,7 @@ body {
 .sticky div {
   backdrop-filter: blur(3px);
 }
+
+.simplebar-scrollbar::before {
+  background-color: red;
+}
