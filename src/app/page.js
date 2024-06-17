@@ -10,7 +10,7 @@ import useSticky from "@/modules/Sticky";
 export default function Home() {
   const { sticky, stickyRef } = useSticky();
   return (
-    <SimpleBar>
+    <>
       <nav ref={stickyRef} className={`z-10 flex-row text-sm w-full flex${sticky ? " sticky" : ""}`}>
         <div className="border border-zinc-400 shadow-lg rounded m-5 p-2 flex align-middle justify-between w-full">
           <div className="flex flex-row items-center">
@@ -50,17 +50,19 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="m-4 flex min-h-screen flex-col items-center">
-        <h1 className="text-4xl">
-          Hello!
-        </h1>
-        <p className="mt-1">
-          This is my website, its still under developement...
-        </p>
-        <div className="w-full">
+      <SimpleBar>
+        <main className="m-4 flex min-h-screen flex-col items-center">
+          <h1 className="text-4xl">
+            Hello!
+          </h1>
+          <p className="mt-1">
+            This is my website, its still under developement...
+          </p>
+          <div className="w-full">
 
-        </div>
-      </main>
-    </SimpleBar>
+          </div>
+        </main>
+      </SimpleBar>
+    </>
   );
 }
