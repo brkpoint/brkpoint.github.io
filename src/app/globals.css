@@ -4,21 +4,32 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 245, 245, 245;
-  --background-end-rgb: 245, 245, 245;
+  --background-rgb: 245, 245, 245;
+  --background-url: url("/bgLight.jpg");
+  --footer-rgb: 30, 30, 30;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 10, 10, 10;
-    --background-end-rgb: 10, 10, 10;
+    --background-rgb: 10, 10, 10;
+
   }
+} */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-end-rgb));
+  background-color: rgb(var(--background-end-rgb));
+  background-image: var(--background-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
 }
 
 @layer utilities {
@@ -34,7 +45,18 @@ body {
 .sticky div {
   backdrop-filter: blur(3px);
 }
+.sticky + .content {
+  padding-top: 82px;
+}
 
-.simplebar-scrollbar::before {
-  background-color: red;
+.navbar-border {
+  border: 1px solid rgb(var(--foreground-rgb));
+}
+
+.footer {
+  border-top: 1px solid rgb(var(--foreground-rgb));
+  background-color: rgb(var(--footer-rgb));
+  color: rgb(var(--background-rgb));
+  height: 80px;
+  margin-top: auto;
 }
