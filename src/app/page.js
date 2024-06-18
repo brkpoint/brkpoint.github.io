@@ -1,17 +1,36 @@
 "use client";
 
+import { useEffect, useState, useRef } from "react"
+
 import Image from "next/image";
 import Link from "next/link";
 
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 
-import useSticky from "@/modules/Sticky";
-
 export default function Home() {
-  const { sticky, stickyRef } = useSticky();
+  const osRef = useRef();
+  const { current } = osRef;
+
+  const stickyRef = useRef(null);
+  const [sticky, setSticky] = useState(false);
+  const [offset, setOffset] = useState(0);
+
   return (
-    <OverlayScrollbarsComponent className="h-full" defer>
-      <main className="flex flex-col h-full items-center">
+    <OverlayScrollbarsComponent
+      ref={osRef}
+      className="h-full"
+      options={{ scrollbars: { autoHide: 'scroll' } }}
+      events={{ scroll: () => {
+        const osInstance = current?.osInstance();
+
+        const { scrollOffsetElement } = osInstance.elements();
+        const { scrollLeft, scrollTop } = scrollOffsetElement;
+
+        setSticky(scrollTop > stickyRef.current.offsetTop);
+      } }}
+      defer
+    >
+      <main className="flex flex-col min-h-screen items-center">
         <nav className={`z-10 p-3 flex-row text-sm w-full flex${sticky ? " sticky" : ""}`}>
           <div className={`p-3 flex rounded align-middle navbar-border w-full${sticky ? " shadow-2xl" : ""}`}>
             <div className="flex w-full justify-between" ref={stickyRef}>
@@ -61,7 +80,61 @@ export default function Home() {
             This is my website, its still under developement...
           </p>
           <div>
-        
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
           </div>
         </div>
       </main>
