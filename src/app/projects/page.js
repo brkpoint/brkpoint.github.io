@@ -3,13 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
+
 import useSticky from "@/modules/Sticky";
 
 export default function Home() {
     const { sticky, stickyRef } = useSticky();
     return (
-        <>
-            <main className="flex flex-col items-center">
+        <OverlayScrollbarsComponent className="h-full" defer>
+            <main className="flex flex-col h-full items-center">
                 <nav className={`z-10 p-3 flex-row text-sm w-full flex${sticky ? " sticky" : ""}`}>
                     <div className={`p-3 flex rounded align-middle navbar-border w-full${sticky ? " shadow-2xl" : ""}`}>
                         <div className="flex w-full justify-between" ref={stickyRef}>
@@ -61,8 +63,8 @@ export default function Home() {
                 </div>
             </main>
             <footer className="p-4 footer flex flex-col items-center justify-center text-xs">
-                <p>©2024 brkpoint | All Rights Reserved</p>
+                <p>© 2024 brkpoint | All Rights Reserved</p>
             </footer>
-        </>
+        </OverlayScrollbarsComponent>
     );
 }
