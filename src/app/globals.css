@@ -53,10 +53,45 @@ body {
   border: 1px solid rgb(var(--foreground-rgb));
 }
 
+.navbar-dropdown-button,
+.navbar-dropdown-menu {
+  display: none;
+}
+
+.navbar-dropdown-menu {
+  position: absolute;
+  top: 70px;
+
+  padding: 4px;
+
+  border: 1px solid rgb(var(--foreground-rgb));
+  
+  backdrop-filter: blur(3px);
+}
+
+.navbar-links {
+  display: flex;
+}
+
 .footer {
   border-top: 1px solid rgb(var(--foreground-rgb));
+
   background-color: rgb(var(--footer-rgb));
   color: rgb(var(--background-rgb));
-  height: 80px;
+
   margin-top: auto;
+}
+
+@media(max-width: 781px) {
+  .navbar-dropdown-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-dropdown-menu.open {
+    display: flex;
+  }
 }
