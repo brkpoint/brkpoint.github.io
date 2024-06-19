@@ -7,7 +7,7 @@ import Link from "next/link";
 
 import { useOverlayScrollbars } from "overlayscrollbars-react";
 
-import Navbar from '@/modules/Navbar'
+import Navbar from '@/components/Navbar'
 
 export default function Home() {
     const stickyRef = useRef(null);
@@ -40,7 +40,11 @@ export default function Home() {
             {osApplied ? (
                 <>
                     <main className="flex flex-col min-h-screen items-center">
-                        <Navbar sticky={sticky} stickyRef={stickyRef} pagedir={"secret"}>
+                        <Navbar
+                            sticky={sticky}
+                            stickyRef={stickyRef}
+                            pagedir={"secret"}
+                        >
                             <ul className="flex flex-row justify-around items-center">
                                 <li className="mr-2">
                                     <Link href="/" className="hover:font-bold hover:-translate-y-2">/home</Link>
