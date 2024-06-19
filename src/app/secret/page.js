@@ -52,7 +52,7 @@ export default function Home() {
                                         <span className="text-lg ml-2">Aleksander</span>
                                     </div>
                                     <div className="flex flex-row text-xl items-center">
-                                        /home
+                                        /secret
                                     </div>
                                     <ul className="flex flex-row justify-around items-center">
                                         <li className="mr-2">

@@ -46,7 +46,7 @@ body {
   backdrop-filter: blur(3px);
 }
 .sticky + .content {
-  padding-top: 82px;
+  padding-top: 83px;
 }
 
 .navbar-border {
