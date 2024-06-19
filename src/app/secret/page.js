@@ -5,14 +5,11 @@ import { useEffect, useState, useRef } from "react"
 import Image from "next/image";
 import Link from "next/link";
 
-import { OverlayScrollbarsComponent, useOverlayScrollbars } from "overlayscrollbars-react";
+import { useOverlayScrollbars } from "overlayscrollbars-react";
 
 export default function Home() {
     const stickyRef = useRef(null);
     const [sticky, setSticky] = useState(false);
-    const [offset, setOffset] = useState(0);
-
-    const osRef = useRef(null);
 
     const [osApplied, setosApplied] = useState(null);
     const [initialize, instance] = useOverlayScrollbars({
@@ -24,6 +21,11 @@ export default function Home() {
             destroyed: () => {
                 setosApplied(false);
             },
+            scroll: () => {
+                const { scrollLeft, scrollTop } = instance().elements().scrollOffsetElement;
+        
+                setSticky(scrollTop > stickyRef.current.offsetTop);
+            },
         },
     });
 
@@ -34,33 +36,7 @@ export default function Home() {
     return (
         <>
             {osApplied ? (
-                <OverlayScrollbarsComponent
-                    ref={osRef}
-                    className="h-full"
-                    options={{ scrollbars: { autoHide: 'scroll' } }}
-                    events={{
-                        initialized: () => {
-                            setosApplied(true);
-                        },
-                        destroyed: () => {
-                            setosApplied(false);
-                        },
-                        scroll: () => {
-                            const { current } = osRef;
-                            const osInstance = current?.osInstance();
-
-                            if (!osInstance) {
-                                return;
-                            }
-
-                            const { scrollOffsetElement } = osInstance.elements();
-                            const { scrollLeft, scrollTop } = scrollOffsetElement;
-
-                            setSticky(scrollTop > stickyRef.current.offsetTop);
-                        },
-                    }}
-                    defer
-                >
+                <>
                     <main className="flex flex-col min-h-screen items-center">
                         <nav className={`z-10 p-3 flex-row text-sm w-full flex${sticky ? " sticky" : ""}`}>
                             <div className={`p-3 flex rounded align-middle navbar-border w-full${sticky ? " shadow-2xl" : ""}`}>
@@ -106,7 +82,7 @@ export default function Home() {
                     <footer className="p-4 footer flex flex-col items-center justify-center text-xs">
                         <p>© 2024 brkpoint | All Rights Reserved</p>
                     </footer>
-                </OverlayScrollbarsComponent>
+                </>
             ) : (
                 null
             )}

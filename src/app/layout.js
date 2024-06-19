@@ -6,10 +6,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Aleksander",
-  description: "Welcome to my page!!",
-  creator: "Aleksander",
   openGraph: {
-    image: "https://avatars.githubusercontent.com/u/88441414?s=48&v=4"
+    title: "Aleksander",
+    description: "Welcome to my page!!",
+    images: ["https://images.weserv.nl/?url=avatars.githubusercontent.com/u/88441414&mask=circle"],
   },
 };
 
