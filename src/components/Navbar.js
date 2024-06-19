@@ -26,9 +26,7 @@ export default function Navbar({ children, pagedir, stickyRef, sticky }) {
                         </div>
                         <div 
                             className="navbar-dropdown-button"
-                            onClick={() => {
-                                setDropdownOpen(!dropdownOpen);
-                            }}
+                            onClick={() => { setDropdownOpen(!dropdownOpen); }}
                         >
                             <Image
                                 src="/barsIcon.png"
