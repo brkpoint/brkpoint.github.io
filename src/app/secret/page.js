@@ -72,9 +72,7 @@ export default function Home() {
                         <p>© 2024 brkpoint | All Rights Reserved</p>
                     </footer>
                 </>
-            ) : (
-                null
-            )}
+            ) : ( <></> )}
         </>
     );
 }
