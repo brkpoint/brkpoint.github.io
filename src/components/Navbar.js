@@ -42,8 +42,10 @@ export default function Navbar({ children, pagedir, stickyRef, sticky }) {
                         </div>
                     </div>
                 </div>
-                <div className={`mt-1 rounded navbar-dropdown-menu${dropdownOpen ? " open" : ""}`}>
-                    {children}
+                <div className={`mt-1 rounded w-full navbar-dropdown-menu${dropdownOpen ? " open" : ""}`}>
+                    <div className="ml-3 mr-3 p-1 flex w-full rounded navbar-dropdown-border">
+                        {children}
+                    </div>
                 </div>
             </nav>
         </>
