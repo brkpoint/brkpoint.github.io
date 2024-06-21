@@ -72,12 +72,7 @@ export default function Home() {
                         </Navbar>
 
                         <div className="content p-2 flex flex-col items-center w-full">
-                            <h1 className="text-4xl">
-                                Nothing here for now...
-                            </h1>
-                            <div>
 
-                            </div>
                         </div>
                     </main>
 
