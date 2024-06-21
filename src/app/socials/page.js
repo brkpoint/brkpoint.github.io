@@ -43,7 +43,7 @@ export default function Home() {
           <Navbar
             sticky={sticky}
             stickyRef={stickyRef}
-            pagedir={"home"}
+            pagedir={"socials"}
           >
             <ul className="flex flex-row justify-around items-center">
               <li className="mr-2">
@@ -72,15 +72,7 @@ export default function Home() {
           </Navbar>
           
           <div className="content p-2 flex flex-col items-center w-full">
-            <h1 className="text-4xl">
-              Hello!
-            </h1>
-            <p className="mt-1">
-              This is my website. If you have any ideas for things I could add, <Link className="text-blue-600 hover:text-blue-900" href="/socials">contact me!</Link>
-            </p>
-            <div>
 
-            </div>
           </div>
         </main>
 

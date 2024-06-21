@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Custom404() {
     return (
         <>
-            <main className="m-4 text-3xl flex min-h-screen flex-col items-center justify-center text-white">
+            <main className="m-4 flex min-h-screen flex-col items-center justify-center text-white">
                 <div className="flex flex-row items-center">
-                    <p>404 - Page not found</p>
+                    <h1 className="text-4xl">404 - Page not found</h1>
                     <Image
                         className="ml-2"
                         src="/cat.gif"
@@ -15,7 +15,9 @@ export default function Custom404() {
                         height={64}
                     />
                 </div>
-                <Link href="/" className="hover:font-bold text-white">Home</Link>
+                <p className="text-md">
+                    Return to <Link href="/" className="hover:font-bold text-white">Home</Link>
+                </p>
             </main>
         </>
     );

@@ -52,6 +52,9 @@ export default function Home() {
                                 <li className="mr-2">
                                     <Link href="/projects" className="hover:font-bold hover:-translate-y-2">/projects</Link>
                                 </li>
+                                <li className="mr-2">
+                                    <Link href="/socials" className="hover:font-bold hover:-translate-y-2">/socials</Link>
+                                </li>
                                 <li className="mr-3">
                                     <Link href="https://github.com/brkpoint" className="hover:font-bold hover:-translate-y-2">/about</Link>
                                 </li>
