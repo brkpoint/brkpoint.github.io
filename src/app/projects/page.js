@@ -159,16 +159,20 @@ export default function Home() {
                                 {timeline.map((item, id) => {
                                     return (
                                         <TimelineItem key={id}>
-                                            <div className="flex flex-row items-center">
-                                                {item.icons.map((url) => {
-                                                    <Image
-                                                        className="mr-1"
-                                                        src={url}
-                                                        alt="js"
-                                                        width={12}
-                                                        height={12}
-                                                    />
-                                                })}
+                                            <div className="flex flex-col items-center">
+                                                <div className="flex flex-row mb-1 w-full items-center justify-start">
+                                                    {item.icons.map((url) => {
+                                                        return (
+                                                            <Image
+                                                                className="mr-1"
+                                                                src={url}
+                                                                alt="icon"
+                                                                width={15}
+                                                                height={15}
+                                                            />
+                                                        );
+                                                    })}
+                                                </div>
                                                 {item.repo.isAvaiable ? 
                                                 <Link href={item.repo.url} className="flex flex-row items-center text-md mr-1">
                                                     {item.name}
