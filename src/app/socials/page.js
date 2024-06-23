@@ -85,17 +85,24 @@ export default function Home() {
                         <span>shibaofficial</span>
                     </div>
                 </li>
-                <li className="m-1 p-3 bg-blur border rounded con-border flex flex-row items-center">
-                    <Image
-                        className="mr-1 rounded-md"
-                        src="https://skillicons.dev/icons?i=github"
-                        alt="github"
-                        width={45}
-                        height={45}
-                    />
-                    <div className="flex flex-col">
+                <li className="m-1 p-3 bg-blur border rounded con-border flex flex-row">
+                    <Link href="https://github.com/brkpoint" className="flex flex-row items-center">
+                        <Image
+                            className="mr-1 rounded-md"
+                            src="https://skillicons.dev/icons?i=github"
+                            alt="github"
+                            width={45}
+                            height={45}
+                        />
                         <span>brkpoint</span>
-                    </div>
+                        <Image
+                            className="ml-2"
+                            src="https://icon-library.com/images/external-link-icon-png/external-link-icon-png-29.jpg"
+                            alt="link-icon"
+                            width={15}
+                            height={15}
+                        />
+                    </Link>
                 </li>
             </ul>
           </div>
