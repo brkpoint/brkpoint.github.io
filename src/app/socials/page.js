@@ -72,7 +72,32 @@ export default function Home() {
           </Navbar>
           
           <div className="content p-2 flex flex-col items-center w-full">
-
+            <ul className="flex flex-row flex-wrap">
+                <li className="m-1 p-2 bg-blur border rounded con-border flex flex-row items-center">
+                    <Image
+                        className="mr-1 rounded-md"
+                        src="https://skillicons.dev/icons?i=discord"
+                        alt="discord"
+                        width={45}
+                        height={45}
+                    />
+                    <div className="flex flex-col">
+                        <span>shibaofficial</span>
+                    </div>
+                </li>
+                <li className="m-1 p-3 bg-blur border rounded con-border flex flex-row items-center">
+                    <Image
+                        className="mr-1 rounded-md"
+                        src="https://skillicons.dev/icons?i=github"
+                        alt="github"
+                        width={45}
+                        height={45}
+                    />
+                    <div className="flex flex-col">
+                        <span>brkpoint</span>
+                    </div>
+                </li>
+            </ul>
           </div>
         </main>
 

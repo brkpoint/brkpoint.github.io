@@ -71,7 +71,7 @@ export default function Home() {
             </ul>
           </Navbar>
           
-          <div className="content p-2 flex flex-col items-center w-full">
+          <div className="content p-3 flex flex-col items-center w-full">
             <h1 className="text-4xl">
               Hello!
             </h1>

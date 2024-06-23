@@ -61,7 +61,7 @@ export default function Home() {
                             </ul>
                         </Navbar>
 
-                        <div className="content p-2 flex flex-col items-center justify-center min-h-screen w-full">
+                        <div className="content p-3 flex flex-col items-center justify-center min-h-screen w-full">
                             <Image
                                 src="/cat2.gif"
                                 alt="kitty"
