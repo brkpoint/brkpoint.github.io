@@ -81,6 +81,17 @@ export default function Home() {
             ],
         },
         {
+            name: "ByteSync-TerminalEditor",
+            date: "31/01/2024",
+            repo: {
+                isAvaiable: true,
+                url: "https://github.com/brkpoint/ByteSync-TerminalEditor/",
+            },
+            icons: [
+                "https://skillicons.dev/icons?i=cpp",
+            ],
+        },
+        {
             name: "Clipper-MacOS",
             date: "01/03/2024",
             repo: {
@@ -89,6 +100,17 @@ export default function Home() {
             },
             icons: [
                 "https://skillicons.dev/icons?i=swift",
+            ],
+        },
+        {
+            name: "mactrix",
+            date: "21/04/2024",
+            repo: {
+                isAvaiable: true,
+                url: "https://github.com/brkpoint/mactrix/",
+            },
+            icons: [
+                "https://skillicons.dev/icons?i=cpp",
             ],
         },
     ];
