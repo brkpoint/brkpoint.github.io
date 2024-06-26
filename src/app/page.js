@@ -76,7 +76,7 @@ export default function Home() {
               Hello!
             </h1>
             <p className="mt-1">
-              This is my website. If you have any ideas for things I could add, <Link className="text-blue-600 hover:text-blue-900" href="/socials">contact me!</Link>
+              This is my website. If you have any ideas for things I could add, <Link className="text-blue-800 hover:text-blue-900" href="/socials">contact me!</Link>
             </p>
             <div>
 

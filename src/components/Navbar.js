@@ -8,7 +8,7 @@ export default function Navbar({ children, pagedir, stickyRef, sticky }) {
 
     return (
         <nav className={`z-10 p-3 flex-col text-sm w-full flex${sticky ? " sticky" : ""}`}>
-            <div className={`p-3 flex rounded align-middle navbar-border w-full${sticky ? " shadow-2xl" : ""}`}>
+            <div className={`p-3 flex rounded align-middle navbar-border bg-blur w-full${sticky ? " shadow-2xl" : ""}`}>
                 <div className="flex w-full justify-between" ref={stickyRef}>
                     <div className="flex flex-row items-center">
                         <Image

@@ -5,7 +5,7 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 245, 245, 245;
-  --background-url: url("/bgLight.jpg");
+  --background-url: url("/bgLight2.jpg");
   --footer-rgb: 30, 30, 30;
 }
 
@@ -25,7 +25,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-end-rgb));
   background-image: var(--background-url);
-  background-size: cover;
+  background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
 
@@ -88,6 +88,7 @@ body {
 
 .bg-blur {
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .con-border {
@@ -154,8 +155,6 @@ body {
   border: 1px solid rgb(var(--foreground-rgb));
   border-radius: 5px;
 
-  backdrop-filter: blur(6px);
-
   padding: 15px;
 
   width: 100%;
@@ -177,10 +176,8 @@ body {
   border: 1px solid rgb(var(--foreground-rgb));
   border-radius: 50%;
 
-  backdrop-filter: blur(6px);
-
   position: absolute;
-  z-index: 100;
+  z-index: 1;
 
   top: calc(50% - 7.5px);
   right: -38.5px;
