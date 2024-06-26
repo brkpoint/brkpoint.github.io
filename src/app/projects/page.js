@@ -181,7 +181,7 @@ export default function Home() {
                                 {timeline.map((item, id) => {
                                     return (
                                         <TimelineItem key={id}>
-                                            <div className="flex flex-col items-center">
+                                            <div className="flex flex-col flex-wrap items-center">
                                                 <div className="flex flex-row mb-1 w-full items-center justify-start">
                                                     {item.icons.map((url, id) => {
                                                         return (

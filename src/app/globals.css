@@ -25,7 +25,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-end-rgb));
   background-image: var(--background-url);
-  /* background-size: cover; */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
