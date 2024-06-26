@@ -3,8 +3,35 @@ import { useEffect, useState, useRef } from "react"
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Navbar({ children, pagedir, stickyRef, sticky }) {
+import { useOverlayScrollbars } from "overlayscrollbars-react";
+
+export default function Navbar({ children, pagedir }) {
     const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const stickyRef = useRef(null);
+    const [sticky, setSticky] = useState(false);
+
+    const [osApplied, setosApplied] = useState(null);
+    const [initialize, instance] = useOverlayScrollbars({
+        defer: true,
+        events: {
+            initialized: () => {
+                setosApplied(true);
+            },
+            destroyed: () => {
+                setosApplied(false);
+            },
+            scroll: () => {
+                const { scrollLeft, scrollTop } = instance().elements().scrollOffsetElement;
+
+                setSticky(scrollTop > stickyRef.current.offsetTop);
+            },
+        },
+    });
+    
+    useEffect(() => {
+        initialize(document.body);
+    }, [initialize]);
 
     return (
         <nav className={`z-10 p-3 flex-col text-sm w-full flex${sticky ? " sticky" : ""}`}>
