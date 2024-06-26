@@ -54,12 +54,14 @@ export default function Navbar({ children, pagedir }) {
                         className="navbar-dropdown-button cursor-pointer"
                         onClick={() => { setDropdownOpen(!dropdownOpen); }}
                     >
-                        <Image
-                            src="/barsIcon.png"
-                            alt="dropdown menu icon"
-                            width={32}
-                            height={32}
-                        />
+                        <div className="flex items-center">
+                            <Image
+                                src="/barsIcon.png"
+                                alt="dropdown menu icon"
+                                width={22}
+                                height={22}
+                            />
+                        </div>
                     </div>
                     <div className="navbar-links">
                         {children}
