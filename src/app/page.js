@@ -51,7 +51,7 @@ export default function Home() {
             </Link>
           </p>
           <div className="flex flex-row items-center justify-center flex-wrap">
-            <p className="mr-4">If you want to play some games I've made for browsers here is the list</p>
+            <p className="mr-4">If you want to play some games I&apos;ve made for browsers here is the list</p>
             <Link className="button flex flex-row items-center shadow-md" href="/games">
               Games
               <Image
