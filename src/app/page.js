@@ -44,11 +44,24 @@ export default function Home() {
           <h1 className="text-4xl">
             Hello!
           </h1>
-          <p className="mt-1">
-            This is my website. If you have any ideas for things I could add, <Link className="text-sky-400 hover:text-sky-500" href="/socials">contact me!</Link>
+          <p className="mt-1 mb-5 flex flex-row flex-wrap justify-center">
+            This is my website. If you have any ideas for things I could add, 
+            <Link className="text-sky-400 hover:text-sky-500 flex flex-nowrap" href="/socials">
+              contact me!
+            </Link>
           </p>
-          <div>
-
+          <div className="flex flex-row items-center justify-center flex-wrap">
+            <p className="mr-4">If you want to play some games I've made for browsers here is the list</p>
+            <Link className="button flex flex-row items-center shadow-md" href="/games">
+              Games
+              <Image
+                className="ml-2"
+                src="https://icon-library.com/images/external-link-icon-png/external-link-icon-png-29.jpg"
+                alt="link-icon"
+                width={15}
+                height={15}
+              />
+            </Link>
           </div>
         </div>
       </main>

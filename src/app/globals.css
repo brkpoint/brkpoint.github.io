@@ -5,6 +5,7 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 245, 245, 245;
+  --background-second-rgb: 200, 200, 200;
   --background-url: url("/bgLight2.jpg");
   --footer-rgb: 30, 30, 30;
 }
@@ -23,13 +24,31 @@ html {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: rgb(var(--background-end-rgb));
+  background-color: rgb(var(--background-rgb));
   background-image: var(--background-url);
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
 
   z-index: -1;
+}
+
+button,
+.button {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+  
+  padding: 6px;
+
+  border: 2px solid rgb(var(--background-second-rgb));
+  border-radius: 8px;
+
+  transition: 262ms;
+}
+
+button:hover,
+.button:hover {
+  border: 2px solid rgb(var(--background-rgb));
 }
 
 @layer utilities {
