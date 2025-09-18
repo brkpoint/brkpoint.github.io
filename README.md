@@ -1,10 +1,8 @@
-Old ugly website.
-
 # brkpoint.github.io
-[![icons](https://skillicons.dev/icons?i=js,nextjs,nodejs,tailwind,css)]()
+[![icons](https://skillicons.dev/icons?i=js,ts,nextjs,nodejs,tailwind,css,react)]()
 
 ## About
-My own page where I add projects or something, so yeah thats it. Made using nextjs and nodejs and tailwind and js and css and someother things... idk how to name this page really, but it is what it is. I need to make it work on phones (I dont wanna really).
+Code of this repo was deleted because it wasn't up to date. And I stopped using github pages for my personal page.
 
-## Known issues:
-- safari scrollbar thing
+[LINK TO NEW ONE!!](https://aleks.re1.pl)
+
